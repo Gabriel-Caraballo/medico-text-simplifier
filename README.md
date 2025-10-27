@@ -34,16 +34,20 @@ pip install -r requirements.txt
 
 ### Inferencia
 ```python
-from src.inference.medical_traduccion import simplify_medical_text
+Ejecuta el script de prueba:
 
-text = "Paciente con hiperlipidemia mixta sin tratamiento previo"
-simplified = simplify_medical_text(text)
-print(simplified)
-```
+prueba_modelo_medico.py
 
-### Entrenamiento
-```bash
-python src/train/train.py
+Ejemplo dentro del script:
+
+entrada = El individuo presenta hematemesis de aspecto en poso de café.
+
+
+
+
+Salida esperada:
+ El paciente está vomitando sangre que tiene apariencia de café, lo que puede indicar una contagio.
+
 ```
 
 ## Estructura del Proyecto
