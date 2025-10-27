@@ -12,7 +12,7 @@ import torch
 from datasets import load_dataset
 
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-from peft import LoraConfig, get_peft_model, TaskType
+from peft import LoraConfig, get_peft_model, TaskType , PeftModel
 
 tokenizer = AutoTokenizer.from_pretrained("google/flan-t5-large")
 
