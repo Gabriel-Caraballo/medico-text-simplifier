@@ -70,7 +70,7 @@ def tokenizar_datos(example):
     
     labels = tokenizer(
         text_target=targets,
-        max_length=150,
+        max_length=200,
         truncation=True,
         padding=False,             
     )
@@ -114,7 +114,7 @@ training_args = Seq2SeqTrainingArguments(
     # Batch
     per_device_train_batch_size=10,       
     per_device_eval_batch_size=10,
-    gradient_accumulation_steps=4,
+    gradient_accumulation_steps=5,
 
     num_train_epochs=5,
 
